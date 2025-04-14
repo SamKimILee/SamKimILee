@@ -3,8 +3,8 @@
     pageEncoding="UTF-8"%>
 <%
     String dbURL = "jdbc:oracle:thin:@localhost:1521/xepdb1"; // DB URL
-    String dbUser = "hr1"; // DB 사용자
-    String dbPassword = "hr1"; // DB 비밀번호
+    String dbUser = "SamkimLee2"; // DB 사용자
+    String dbPassword = "SamkimLee2"; // DB 비밀번호
     //String sql = "UPDATE MEMBER SET USER_STATUS = 'inactive'" +
 				//"WHERE LAST_LOGIN < ADD_MONTHS(SYSDATE, -12)" +
 				//"AND USER_STATUS != 'inactive'"; // 쿼리
