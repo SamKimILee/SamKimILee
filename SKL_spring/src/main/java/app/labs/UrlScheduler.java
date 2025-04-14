@@ -22,7 +22,8 @@ public class UrlScheduler {
 //	@Autowired
 //	ScheduleController scheduleController;
 	
-    @Scheduled(fixedRate = 86400000)  // 10000ms = 10초, 86400000 : 1일
+//    @Scheduled(fixedRate = 86400000)  // 10000ms = 10초, 86400000 : 1일
+    @Scheduled(cron = "0 0 0 * * *")
     public void callUrl() {
     	log.info("test scheduler1");
 //    	scheduleController.scheduledMemberUpdate();
