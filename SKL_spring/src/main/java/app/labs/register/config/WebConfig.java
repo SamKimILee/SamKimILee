@@ -14,9 +14,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
-
 @Configuration
 @RequiredArgsConstructor // final 필드를 매개변수로 받는 생성자 자동 생성해줌
 public class WebConfig implements WebMvcConfigurer {
@@ -44,10 +41,5 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins("http://127.0.0.1:8080", "http://localhost:8080") // 허용할 출처 : 특정 도메인만 받을 수 있음
                 .allowedMethods("GET", "POST") // 허용할 HTTP method
                 .allowCredentials(true); // 쿠키 인증 요청 허용
-    }
-    
-    @Bean
-    RestTemplate restTemplate() {
-        return new RestTemplate();
     }
 }
